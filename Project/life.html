@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<title>Farmers Friend</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-green.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+  
+  </a>
+  <a href="https://agritech.tnau.ac.in/" target="_blank"class="w3-bar-item w3-button">Tamilnadu</a>
+  <a href="https://kerala.gov.in/" target="_blank"class="w3-bar-item w3-button">Kerla</a>
+  <a href="https://www.ap.gov.in/"target="_blank" class="w3-bar-item w3-button">AndraPradesh</a>
+  <a href="https://www.telangana.gov.in/" target="_blank"class="w3-bar-item w3-button">Telangana</a>
+ 
+ 
+
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-right-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+ <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">INDIA </a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Offer</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Queries & Feedback</a>
+  <a href="gallery.html"target="_blank"class="w3-bar-item w3-button">Gallery</a>
+   <a href="animal husbandry.html"target="_blank"class="w3-bar-item w3-button">Animal Husbandry</a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">More Options <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="https://agritech.tnau.ac.in/" target="_blank"class="w3-bar-item w3-button">Tamilnadu</a>
+      <a href="https://kerala.gov.in/"target="_blank" class="w3-bar-item w3-button">Kerla</a>
+      <a href="https://www.ap.gov.in/" target="_blank"class="w3-bar-item w3-button">AndraPradesh</a>
+      <a href="https://www.telangana.gov.in/"target="_blank" class="w3-bar-item w3-button">Telangana</a>
+      
+    </div>
+  </div>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Offer</a>
+    <a href="#contact" class="w3-bar-item w3-button">Queries & Feedback</a>
+    <a href="#about" class="w3-bar-item w3-button">More Options</a>
+    <a href="gallery.html"class="w3-bar-item w3-button">Gallery</a>
+    </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="pic.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Saplings"></button>
+  </div>
+</div>
+<br>  
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Tamilnadu </h4>
+      <h5>Farmers are power <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Plant trees for saving environment</p>
+      <p>Free Saplings Available In <a class="w3-text-teal" href=https://www.forests.tn.gov.in/pages/view/SOCIAL-FORESTRY" target="_blank">Forestry Department</a> Tamilnadu</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p></p>
+    </footer>
+  </div>
+</div>
+<style>
+.btn-group button {
+    background-color: #4CAF50; 
+    border: 1px solid green; 
+    color: white; 
+    padding: 5px 120px; 
+    cursor: pointer; 
+    float: center; 
+}
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+</style>
+<body>
+  <h3>State Wise Data:</h3>
+<div class="btn-group"> 
+   <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">TAMILNADU <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="http://122.15.179.102/ARS/home/rainfall"  target="_blank"class="w3-bar-item w3-button">Rainfall Info</a>
+      <a href="http://122.15.179.102/seed_private/public_seed" target="_blank" class="w3-bar-item w3-button">Seed Availability</a>
+      <a href="http://122.15.179.102/ARS/fert_stock_position/index/en" target="_blank" class="w3-bar-item w3-button">Fertilizer Details</a>
+      <a href="http://tnagrisnet.tn.gov.in/ARS/home/reservoir" target="_blank"class="w3-bar-item w3-button">Reservoir Details</a>
+      <a href="http://www.aed.tn.gov.in/"  target="_blank"class="w3-bar-item w3-button">Agri Department</a>
+      </div>
+    </div>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">PONDYCHERY <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="https://agritech.tnau.ac.in/"target="_blank" class="w3-bar-item w3-button">Rainfall Info</a>
+      <a href="https://kerala.gov.in/"target="_blank" class="w3-bar-item w3-button">Seed Availability</a>
+      <a href="https://www.ap.gov.in/"target="_blank" class="w3-bar-item w3-button">AndraPradesh</a>
+      <a href="https://www.telangana.gov.in/"target="_blank" class="w3-bar-item w3-button">Reservoir Details</a>
+      </div>
+    </div>
+ <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">FERTILIZERS<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="organic.html" target="_blank"class="w3-bar-item w3-button">Organic Fertilizers</a>
+      <a href="fertilizer.html"  target="_blank" class="w3-bar-item w3-button">Chemical Fertilizers</a>
+      </div>
+    </div>
+</div>
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-left-align" id="team">
+  
+<h2>INDIA IN AGRICULTURE</h2>
+<ul class="w3-ul w3-border-top">
+  <li class="w3-theme-l1">
+    <p></p>
+  <a class="w3-button w3-xlarge w3-circle w3-theme-action"
+  style="position:fixed;top:48px;right:24px;">+</a>
+  <p>Agriculture is the most important sector of Indian Economy. Indian agriculture sector accounts for 18 per cent of India's gross domestic product (GDP) and provides employment to 50% of the countries workforce. India is the world's largest producer of pulses, rice, wheat, spices and spice products.</p>
+  <p>Categories of Crops in India:<br>
+Food Crops (Wheat, Maize, Rice, Millets and Pulses etc.)<br>
+Cash Crops (Sugarcane, Tobacco, Cotton, Jute and Oilseeds etc.)<br>
+Plantation Crops (Coffee, Coconut, Tea, and Rubber etc.)<br>
+Horticulture crops (Fruits and Vegetables)<br>
+</p>
+  </li>
+</ul>
+<br>
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+<div class="w3-center">
+<h2></h2>
+<p>Agriculture continues to be the most predominant sector of the State economy, as 70 percent of the population is engaged in Agriculture and allied activities for their livelihood. The State has as an area of 1.3 Lakh sq.km with a gross cropped area of around 63 L.Ha.. </p>
+</div>
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="machine.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>MACHINES</h3>
+  </div>
+  </div>
+</div>
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="download.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>ORGANIC</h3>
+   </div>
+  </div>
+</div>
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="images.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>PESTICIDES</h3>
+  </div>
+  </div>
+</div>
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="picture.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>FERTILIZERS</h3>
+  </div>
+  </div>
+</div>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>PRICING</h2>
+    <p>Choose a pricing plan that fits your needs.</p><br>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Pesticides</p>
+        </li>
+        <li class="w3-padding-16"><b>10 l glycel</b> </li>
+        <li class="w3-padding-16"><b>5 l nutrient</b> </li>
+        <li class="w3-padding-16"><b>1 l protien</b> </li>
+        <li class="w3-padding-16"><b>Offer</b></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-rupee"></i> 1000</h2>
+          <span class="w3-opacity"></span>
+        </li>      
+      </ul>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">Fertilizers</p>
+        </li>
+        <li class="w3-padding-16"><b>25 kg</b> NPK</li>
+        <li class="w3-padding-16"><b>15 kg</b> Nitrate</li>
+        <li class="w3-padding-16"><b>10 kg</b> Neem Cake</li>
+        <li class="w3-padding-16"><b>Offer</b> </li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-rupee"></i> 2000</h2>
+          <span class="w3-opacity"></span>
+        </li>
+             </ul>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Premium</p>
+        </li>
+        <li class="w3-padding-16"><b>25 kg<b> NPK>
+        <li class="w3-padding-16"><b>10 l</b> Glycel</li>
+        <li class="w3-padding-16"><b>50 l</b> protien</li>
+        <li class="w3-padding-16"><b>Offer</b></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-rupee"></i> 3000</h2>
+          <span class="w3-opacity"></span>
+        </li>
+            </ul>
+    </div>
+</div>
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address: </h3>
+      <p>1/206, BK Agro Services and Pvt Ltd,Salem-11  </p> 
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Tamilnadu,India</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  8508912904</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  farmersfriend@gmail.com</p>
+    </div>
+<div class="w3-col m7">
+<form action="https://docs.google.com/forms/d/e/1FAIpQLScU-4Nqg-5ke_nAvprgQbeJQlsh7lt8oE_aqX7qjSvyeaseSw/formResponse" target="_self" method="POST" >
+      <div class="w3-section"> 
+      <p><b>Queries And Feedback:</b></p>
+        <label>Name</label>
+        <input class="w3-input" type="text" name="entry.563713303" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="entry.845216773" required>
+      </div> 
+      <div class="w3-section">    
+        <p>FEEDBACK AND QUERIES:</p>
+        <textarea name="entry.1771023885" style="float: left;" rows="5" cols="25"></textarea>    <br>      <input type="radio"  name="entry.888999635" value="Good" checked >Good<br>
+  <input type="radio" name="entry.888999635" value="Average"> Average<br>
+  <input type="radio" name="entry.888999635" value="Bad"> Bad <br>  <br>
+      </div> <br> 
+      <input class="w3-check" type="checkbox" checked name="entry.16017947">
+      <label>REPLY SOON</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      <form action="/action_page.php">
+      </form>
+    </form>
+  </form>
+      </form>
+    </div>
+  </div>
+</div>
+<br>
+</body>
+</html>
+
